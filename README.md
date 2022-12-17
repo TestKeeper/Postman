@@ -1,6 +1,6 @@
 ### What this project is for?
 
-This project does a GET,POST,PUT,DELETE,CREATE request to the following API endpoint
+This project does a GET,POST,PUT,DELETE,request to the following API endpoint
 https://jsonplaceholder.typicode.com & api.trello.com
 
 The postman collection tests does the following:
