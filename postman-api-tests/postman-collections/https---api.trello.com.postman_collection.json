@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "d767888d-45cd-4635-82b0-c05741a546bc",
+		"name": "https://api.trello.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22771914"
+	},
+	"item": [
+		{
+			"name": "Get a board",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6301046e77c86c756a152516?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6301046e77c86c756a152516"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e",
+							"description": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+							"description": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Automate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6301046e77c86c756a152516/cards/?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6301046e77c86c756a152516",
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a card",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/63020b549310fd00d5f0fd6d?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"63020b549310fd00d5f0fd6d"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"my api for trello\",\r\n    \"desc\": \"Queries for my trello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=6301046e77c86c756a15251d&key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "6301046e77c86c756a15251d"
+						},
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"new card for trello\",\r\n    \"desc\": \"NewQueries for my trello\"\r\n    \"cover\": {\r\n    \"color\": \"green\"\r\n\r\n    }\r\n\r\n\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/cards/630142920ba38a0095d88fc5?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"630142920ba38a0095d88fc5"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a card",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6301046e77c86c756a152516?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6301046e77c86c756a152516"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/6301046e77c86c756a152516?key=8483499ff0b771d88dc106a8b5481d9e&token=c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"6301046e77c86c756a152516"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "8483499ff0b771d88dc106a8b5481d9e"
+						},
+						{
+							"key": "token",
+							"value": "c786ee134ec2397b6e45ce3b9aacbc7d077b556f74ab064698ad23dc6aa32e86"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Automatic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"{\r",
+							"\t\"info\": {\r",
+							"\t\t\"_postman_id\": \"a37e5114-3f50-4030-b144-046e9ac24632\",\r",
+							"\t\t\"name\": \"банковское приложение\",\r",
+							"\t\t\"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\"\r",
+							"\t},\r",
+							"\t\"item\": [\r",
+							"\t\t{\r",
+							"\t\t\t\"name\": \"Регистрация\",\r",
+							"\t\t\t\"request\": {\r",
+							"\t\t\t\t\"method\": \"POST\",\r",
+							"\t\t\t\t\"header\": [],\r",
+							"\t\t\t\t\"body\": {\r",
+							"\t\t\t\t\t\"mode\": \"raw\",\r",
+							"\t\t\t\t\t\"raw\": \"{\\n    \\\"username\\\": \\\"{{Login}}\\\",\\n    \\\"secret\\\": \\\"{{Pass}}\\\",\\n    \\\"email\\\": \\\"{{email}}\\\"\\n}\",\r",
+							"\t\t\t\t\t\"options\": {\r",
+							"\t\t\t\t\t\t\"raw\": {\r",
+							"\t\t\t\t\t\t\t\"language\": \"json\"\r",
+							"\t\t\t\t\t\t}\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"url\": {\r",
+							"\t\t\t\t\t\"raw\": \"{{bank}}api/loans/v1/register\",\r",
+							"\t\t\t\t\t\"host\": [\r",
+							"\t\t\t\t\t\t\"{{bank}}api\"\r",
+							"\t\t\t\t\t],\r",
+							"\t\t\t\t\t\"path\": [\r",
+							"\t\t\t\t\t\t\"loans\",\r",
+							"\t\t\t\t\t\t\"v1\",\r",
+							"\t\t\t\t\t\t\"register\"\r",
+							"\t\t\t\t\t]\r",
+							"\t\t\t\t}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"response\": []\r",
+							"\t\t},\r",
+							"\t\t{\r",
+							"\t\t\t\"name\": \"Аутентификация\",\r",
+							"\t\t\t\"event\": [\r",
+							"\t\t\t\t{\r",
+							"\t\t\t\t\t\"listen\": \"test\",\r",
+							"\t\t\t\t\t\"script\": {\r",
+							"\t\t\t\t\t\t\"exec\": [\r",
+							"\t\t\t\t\t\t\t\"\"\r",
+							"\t\t\t\t\t\t],\r",
+							"\t\t\t\t\t\t\"type\": \"text/javascript\"\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t}\r",
+							"\t\t\t],\r",
+							"\t\t\t\"request\": {\r",
+							"\t\t\t\t\"method\": \"POST\",\r",
+							"\t\t\t\t\"header\": [],\r",
+							"\t\t\t\t\"body\": {\r",
+							"\t\t\t\t\t\"mode\": \"raw\",\r",
+							"\t\t\t\t\t\"raw\": \"{\\n    \\\"username\\\": \\\"{{Login}}\\\",\\n    \\\"secret\\\": \\\"{{Pass}}\\\"\\n}\",\r",
+							"\t\t\t\t\t\"options\": {\r",
+							"\t\t\t\t\t\t\"raw\": {\r",
+							"\t\t\t\t\t\t\t\"language\": \"json\"\r",
+							"\t\t\t\t\t\t}\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"url\": {\r",
+							"\t\t\t\t\t\"raw\": \"{{bank}}api/loans/v1/login\",\r",
+							"\t\t\t\t\t\"host\": [\r",
+							"\t\t\t\t\t\t\"{{bank}}api\"\r",
+							"\t\t\t\t\t],\r",
+							"\t\t\t\t\t\"path\": [\r",
+							"\t\t\t\t\t\t\"loans\",\r",
+							"\t\t\t\t\t\t\"v1\",\r",
+							"\t\t\t\t\t\t\"login\"\r",
+							"\t\t\t\t\t]\r",
+							"\t\t\t\t}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"response\": []\r",
+							"\t\t},\r",
+							"\t\t{\r",
+							"\t\t\t\"name\": \"Создание организации\",\r",
+							"\t\t\t\"protocolProfileBehavior\": {\r",
+							"\t\t\t\t\"disabledSystemHeaders\": {}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"request\": {\r",
+							"\t\t\t\t\"auth\": {\r",
+							"\t\t\t\t\t\"type\": \"bearer\"\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"method\": \"POST\",\r",
+							"\t\t\t\t\"header\": [\r",
+							"\t\t\t\t\t{\r",
+							"\t\t\t\t\t\t\"key\": \"Authorization\",\r",
+							"\t\t\t\t\t\t\"value\": \"{{Authentication token}}\",\r",
+							"\t\t\t\t\t\t\"type\": \"text\"\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t],\r",
+							"\t\t\t\t\"body\": {\r",
+							"\t\t\t\t\t\"mode\": \"raw\",\r",
+							"\t\t\t\t\t\"raw\": \"{\\n    \\\"orgname\\\": \\\"{{$randomCompanyName}}\\\",\\n    \\\"address\\\": \\\"{{$randomStreetAddress}}\\\"\\n}\",\r",
+							"\t\t\t\t\t\"options\": {\r",
+							"\t\t\t\t\t\t\"raw\": {\r",
+							"\t\t\t\t\t\t\t\"language\": \"json\"\r",
+							"\t\t\t\t\t\t}\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"url\": {\r",
+							"\t\t\t\t\t\"raw\": \"{{bank}}api/loans/v1/organizations\",\r",
+							"\t\t\t\t\t\"host\": [\r",
+							"\t\t\t\t\t\t\"{{bank}}api\"\r",
+							"\t\t\t\t\t],\r",
+							"\t\t\t\t\t\"path\": [\r",
+							"\t\t\t\t\t\t\"loans\",\r",
+							"\t\t\t\t\t\t\"v1\",\r",
+							"\t\t\t\t\t\t\"organizations\"\r",
+							"\t\t\t\t\t]\r",
+							"\t\t\t\t}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"response\": []\r",
+							"\t\t},\r",
+							"\t\t{\r",
+							"\t\t\t\"name\": \"Посмотреть информацию об организации\",\r",
+							"\t\t\t\"protocolProfileBehavior\": {\r",
+							"\t\t\t\t\"disableBodyPruning\": true\r",
+							"\t\t\t},\r",
+							"\t\t\t\"request\": {\r",
+							"\t\t\t\t\"method\": \"GET\",\r",
+							"\t\t\t\t\"header\": [\r",
+							"\t\t\t\t\t{\r",
+							"\t\t\t\t\t\t\"key\": \"Authorization\",\r",
+							"\t\t\t\t\t\t\"value\": \"{{Authentication token}}\",\r",
+							"\t\t\t\t\t\t\"type\": \"text\"\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t],\r",
+							"\t\t\t\t\"body\": {\r",
+							"\t\t\t\t\t\"mode\": \"raw\",\r",
+							"\t\t\t\t\t\"raw\": \"\"\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"url\": {\r",
+							"\t\t\t\t\t\"raw\": \"{{bank}}api/loans/v1/organizations/4\",\r",
+							"\t\t\t\t\t\"host\": [\r",
+							"\t\t\t\t\t\t\"{{bank}}api\"\r",
+							"\t\t\t\t\t],\r",
+							"\t\t\t\t\t\"path\": [\r",
+							"\t\t\t\t\t\t\"loans\",\r",
+							"\t\t\t\t\t\t\"v1\",\r",
+							"\t\t\t\t\t\t\"organizations\",\r",
+							"\t\t\t\t\t\t\"4\"\r",
+							"\t\t\t\t\t]\r",
+							"\t\t\t\t}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"response\": []\r",
+							"\t\t},\r",
+							"\t\t{\r",
+							"\t\t\t\"name\": \"Оставить заявку на кредит для организации\",\r",
+							"\t\t\t\"request\": {\r",
+							"\t\t\t\t\"method\": \"POST\",\r",
+							"\t\t\t\t\"header\": [\r",
+							"\t\t\t\t\t{\r",
+							"\t\t\t\t\t\t\"key\": \"Authorization\",\r",
+							"\t\t\t\t\t\t\"value\": \"{{Authentication token}}\",\r",
+							"\t\t\t\t\t\t\"type\": \"text\"\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t],\r",
+							"\t\t\t\t\"body\": {\r",
+							"\t\t\t\t\t\"mode\": \"raw\",\r",
+							"\t\t\t\t\t\"raw\": \"{\\r\\n    \\\"orgId\\\": 4,\\r\\n    \\\"amount\\\": \\\"600000\\\",\\r\\n    \\\"currency\\\": \\\"RUB\\\",\\r\\n    \\\"fullname\\\": \\\"Gusev Roman Gennadievich\\\",\\r\\n    \\\"passportinfo\\\": \\\"6598 7676 Vydan otdelom MVD po gorodu Moskve v raione Lefortovo 340-444\\\"\\r\\n    }\",\r",
+							"\t\t\t\t\t\"options\": {\r",
+							"\t\t\t\t\t\t\"raw\": {\r",
+							"\t\t\t\t\t\t\t\"language\": \"json\"\r",
+							"\t\t\t\t\t\t}\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t},\r",
+							"\t\t\t\t\"url\": {\r",
+							"\t\t\t\t\t\"raw\": \"{{bank}}api/loans/v1/applications\",\r",
+							"\t\t\t\t\t\"host\": [\r",
+							"\t\t\t\t\t\t\"{{bank}}api\"\r",
+							"\t\t\t\t\t],\r",
+							"\t\t\t\t\t\"path\": [\r",
+							"\t\t\t\t\t\t\"loans\",\r",
+							"\t\t\t\t\t\t\"v1\",\r",
+							"\t\t\t\t\t\t\"applications\"\r",
+							"\t\t\t\t\t]\r",
+							"\t\t\t\t}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"response\": []\r",
+							"\t\t},\r",
+							"\t\t{\r",
+							"\t\t\t\"name\": \"Проверить информацию о заявке\",\r",
+							"\t\t\t\"request\": {\r",
+							"\t\t\t\t\"method\": \"GET\",\r",
+							"\t\t\t\t\"header\": [\r",
+							"\t\t\t\t\t{\r",
+							"\t\t\t\t\t\t\"key\": \"Authorization\",\r",
+							"\t\t\t\t\t\t\"value\": \"{{Authentication token}}\",\r",
+							"\t\t\t\t\t\t\"type\": \"text\"\r",
+							"\t\t\t\t\t}\r",
+							"\t\t\t\t],\r",
+							"\t\t\t\t\"url\": {\r",
+							"\t\t\t\t\t\"raw\": \"{{bank}}api/loans/v1/applications/1\",\r",
+							"\t\t\t\t\t\"host\": [\r",
+							"\t\t\t\t\t\t\"{{bank}}api\"\r",
+							"\t\t\t\t\t],\r",
+							"\t\t\t\t\t\"path\": [\r",
+							"\t\t\t\t\t\t\"loans\",\r",
+							"\t\t\t\t\t\t\"v1\",\r",
+							"\t\t\t\t\t\t\"applications\",\r",
+							"\t\t\t\t\t\t\"1\"\r",
+							"\t\t\t\t\t]\r",
+							"\t\t\t\t}\r",
+							"\t\t\t},\r",
+							"\t\t\t\"response\": []\r",
+							"\t\t}\r",
+							"\t],\r",
+							"\t\"variable\": [\r",
+							"\t\t{\r",
+							"\t\t\t\"key\": \"bank\",\r",
+							"\t\t\t\"value\": \"http://api-qa.skillbox.ru/\""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+					"protocol": "https",
+					"host": [
+						"schema",
+						"getpostman",
+						"com"
+					],
+					"path": [
+						"json",
+						"collection",
+						"v2.1.0",
+						"collection.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
