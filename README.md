@@ -1,6 +1,6 @@
 ### What this project is for?
 
-This project does a GET request to the following API endpoint
+This project does a GET,POST,PUT,DELETE,CREATE request to the following API endpoint
 https://jsonplaceholder.typicode.com
 
 The postman collection tests does the following:
